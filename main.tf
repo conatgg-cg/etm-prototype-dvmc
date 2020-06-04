@@ -39,7 +39,7 @@ data "aws_region" "current" {}
 # Zip the lambda if unzipped out of build process
 data "archive_file" "zipped_lambda" {
   type        = "zip"
-  source_file = "etm-prototype-dvmc"
+  source_file = "app"
   output_path = "etm-prototype-dvmc.zip"
 }
 
